@@ -1,0 +1,14 @@
+package com.fpg.ec;
+
+
+import org.apache.commons.logging.Log;
+
+public class MyLog {
+
+	public static void main(String[] args) {
+		Log logger = Log.getLogger(MyLog.class.getName());
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+==================================
+# DEBUG < INFO < WARN < ERROR < FATAL
+log4j.rootLogger=DEBUG,stdout
+log4j.logger.com.ibatis= INFO
+
+#set org.apache and org.springframework fro short log.
+log4j.logger.org.apache=INFO
+log4j.logger.org.springframework=INFO
+
+log4j.logger.test = INFO
+
+
+log4j.logger.com.ibatis.common.jdbc.SimpleDataSource = INFO,stdout
+log4j.logger.com.ibatis.common.jdbc.ScriptRunner=DEBUG
+log4j.logger.com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate=DEBUG
+log4j.logger.java.sql.Connection = DEBUG
+log4j.logger.java.sql.Statement = DEBUG
+log4j.logger.java.sql.PreparedStatement = DEBUG
+log4j.logger.java.sql.ResultSet = DEBUG  
+
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Threshold=DEBUG
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy/MM/dd HH:mm:ss,SSS} %5p %c{1}:%L - %m%n

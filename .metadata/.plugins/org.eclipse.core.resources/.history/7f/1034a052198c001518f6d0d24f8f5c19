@@ -1,0 +1,9 @@
+package com.fpg.ec;
+
+public class MyLog {
+
+	public static void main(String[] args) {
+
+	}
+
+}
